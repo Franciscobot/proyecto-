@@ -1,1 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Unidades</title>
+</head>
+<body>
 
+<div class="container">
+    <h2>Conversor de Unidades</h2>
+    <label for="conversionType">Selecciona el tipo de conversión:</label>
+    <select id="conversionType">
+        <option value="c_to_f">Celsius a Fahrenheit</option>
+        <option value="f_to_c">Fahrenheit a Celsius</option>
+        <option value="m_to_ft">Metros a Pies</option>
+        <option value="ft_to_m">Pies a Metros</option>
+    </select>
+
+    <input type="number" id="inputValue" placeholder="Introduce el valor">
+    <button onclick="convert()">Convertir</button>
+
+    <div class="result" id="result"></div>
+</div>
+
+</body>
+</html>
